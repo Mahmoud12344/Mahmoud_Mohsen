@@ -124,7 +124,17 @@ class ProjectGallery {
         images.forEach((image, index) => {
             const slide = document.createElement('div');
             slide.className = 'gallery-slide';
-            slide.innerHTML = `<img src="${image}" alt="${projectTitle} Screenshot ${index + 1}" class="gallery-image">`;
+            slide.innerHTML = `
+                <div class="image-container">
+                    <div class="loading-spinner"></div>
+                    <img src="${image}" 
+                         alt="${projectTitle} Screenshot ${index + 1}" 
+                         class="gallery-image" 
+                         loading="lazy"
+                         onload="this.parentElement.querySelector('.loading-spinner').style.display='none'"
+                         onerror="this.parentElement.innerHTML='<div class=\'error-message\'><i class=\'fas fa-exclamation-triangle\'></i><p>Failed to load image</p></div>'">
+                </div>
+            `;
             this.slider.appendChild(slide);
         });
 
@@ -134,9 +144,11 @@ class ProjectGallery {
         // Update counter
         this.updateCounter();
         
-        // Show modal
-        this.galleryModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        // Show modal with smooth transition
+        requestAnimationFrame(() => {
+            this.galleryModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
     }
 
     createIndicators() {

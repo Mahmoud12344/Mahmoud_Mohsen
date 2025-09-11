@@ -12,6 +12,9 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     transition: all .3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .theme-light {

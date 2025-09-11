@@ -3,9 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Mahmoud Mohsen | Android Developer Portfolio</title>
-    <link rel="icon" href="https://img.icons8.com/fluency/48/android-os.png">
+    <meta name="description" content="Professional Android Developer specializing in custom app development, UI/UX design, and mobile solutions. Available for freelance projects and full-time opportunities.">
+    <meta name="keywords" content="Android Developer, Mobile App Development, Kotlin, Java, UI/UX Design, Freelance Developer">
+    <meta name="author" content="Mahmoud Mohsen">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico">
+    <meta property="og:title" content="Mahmoud Mohsen - Android Developer Portfolio">
+    <meta property="og:description" content="Professional Android Developer specializing in custom app development, UI/UX design, and mobile solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahmoud12344.github.io/portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mahmoud Mohsen - Android Developer">
+    <meta name="twitter:description" content="Professional Android Developer specializing in custom app development and mobile solutions.">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
@@ -14,6 +28,14 @@
 </head>
 
 <body class="theme-dark">
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -30,9 +52,31 @@
             </ul>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle"><i class="fas fa-sun"></i></button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills & Technologies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Hero -->
     <section id="home" class="hero">
@@ -159,7 +203,7 @@
                         <i class="fas fa-eye"></i> See Certificate
                     </a>
                 </div>
-                <h3 style="color:var(--primary);margin-bottom:1rem;font-size:1.25rem">  </h3>
+                             <h3 style="color:var(--primary);margin-bottom:1rem;font-size:1.25rem">  </h3>
 
                 <div
                     style="padding:1.5rem;border-left:4px solid var(--primary);background:rgba(37,99,235,.05);border-radius:var(--radius)">
@@ -196,113 +240,113 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Technologies
-                </h2>
-                <p class="section-subtitle">
-                    Comprehensive skill set covering modern Android development, from architecture to
-                    deployment
-                </p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card card">
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java"
-                            style="width:40px;height:40px;">
-                    </div>
-                    <h3 class="skill-title">Programming Languages</h3>
-                    <p class="skill-description">Java, Kotlin, Object-Oriented Programming, Data Structures
-                        & Algorithms</p>
-                    <div
-                        style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
-                        <img src="https://img.icons8.com/color/32/kotlin.png" alt="Kotlin" title="Kotlin">
-                        <img src="https://img.icons8.com/color/32/c-sharp-logo.png" alt="C#" title="C#">
-                    </div>
-                </div>
+                <section id="skills" class="section">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2 class="section-title">Skills & Technologies
+                            </h2>
+                            <p class="section-subtitle">
+                                Comprehensive skill set covering modern Android development, from architecture to
+                                deployment
+                            </p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-card card">
+                                <div class="skill-icon">
+                                    <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java"
+                                        style="width:40px;height:40px;">
+                                </div>
+                                <h3 class="skill-title">Programming Languages</h3>
+                                <p class="skill-description">Java, Kotlin, Object-Oriented Programming, Data Structures
+                                    & Algorithms</p>
+                                <div
+                                    style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                                    <img src="https://img.icons8.com/color/32/kotlin.png" alt="Kotlin" title="Kotlin">
+                                    <img src="https://img.icons8.com/color/32/c-sharp-logo.png" alt="C#" title="C#">
+                                </div>
+                            </div>
 
-                <div class="skill-card card">
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/fluency/48/android-os.png" alt="Android"
-                            style="width:40px;height:40px;">
-                    </div>
-                    <h3 class="skill-title">Android Architecture</h3>
-                    <p class="skill-description">MVVM, Clean Architecture, Repository Pattern, Dependency
-                        Injection</p>
-                    <div
-                        style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
-                        <img src="https://img.icons8.com/color/32/android-studio--v3.png"
-                            alt="Android Studio" title="Android Studio">
-                        <img src="https://img.icons8.com/color/32/firebase.png" alt="Firebase"
-                            title="Firebase">
-                    </div>
-                </div>
+                            <div class="skill-card card">
+                                <div class="skill-icon">
+                                    <img src="https://img.icons8.com/fluency/48/android-os.png" alt="Android"
+                                        style="width:40px;height:40px;">
+                                </div>
+                                <h3 class="skill-title">Android Architecture</h3>
+                                <p class="skill-description">MVVM, Clean Architecture, Repository Pattern, Dependency
+                                    Injection</p>
+                                <div
+                                    style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                                    <img src="https://img.icons8.com/color/32/android-studio--v3.png"
+                                        alt="Android Studio" title="Android Studio">
+                                    <img src="https://img.icons8.com/color/32/firebase.png" alt="Firebase"
+                                        title="Firebase">
+                                </div>
+                            </div>
 
-                <div class="skill-card card">
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/color/48/material-ui.png" alt="Material Design"
-                            style="width:40px;height:40px;">
-                    </div>
-                    <h3 class="skill-title">UI & UX Design</h3>
-                    <p class="skill-description">Material Design, Jetpack Compose, Custom Views, Responsive
-                        Layouts</p>
-                    <div
-                        style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
-                        <img src="https://img.icons8.com/color/32/figma--v1.png" alt="Figma" title="Figma">
-                        <img src="https://img.icons8.com/color/32/adobe-xd.png" alt="Adobe XD"
-                            title="Adobe XD">
-                    </div>
-                </div>
+                            <div class="skill-card card">
+                                <div class="skill-icon">
+                                    <img src="https://img.icons8.com/color/48/material-ui.png" alt="Material Design"
+                                        style="width:40px;height:40px;">
+                                </div>
+                                <h3 class="skill-title">UI & UX Design</h3>
+                                <p class="skill-description">Material Design, Jetpack Compose, Custom Views, Responsive
+                                    Layouts</p>
+                                <div
+                                    style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                                    <img src="https://img.icons8.com/color/32/figma--v1.png" alt="Figma" title="Figma">
+                                    <img src="https://img.icons8.com/color/32/adobe-xd.png" alt="Adobe XD"
+                                        title="Adobe XD">
+                                </div>
+                            </div>
 
-                <div class="skill-card card">
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/external-api-computer-programming-flaticons-flat-flat-icons-3.png"
-                            alt="API" style="width:40px;height:40px;">
-                    </div>
-                    <h3 class="skill-title">Data & Networking</h3>
-                    <p class="skill-description">Room Database, Retrofit, REST APIs, JSON, Local Storage</p>
-                    <div
-                        style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
-                        <img src="https://img.icons8.com/color/32/postgreesql.png" alt="PostgreSQL"
-                            title="PostgreSQL">
-                        <img src="https://img.icons8.com/color/32/microsoft-sql-server.png" alt="SQL Server"
-                            title="SQL Server">
-                        <img src="https://img.icons8.com/color/32/json.png" alt="JSON" title="JSON">
-                    </div>
-                </div>
+                            <div class="skill-card card">
+                                <div class="skill-icon">
+                                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/external-api-computer-programming-flaticons-flat-flat-icons-3.png"
+                                        alt="API" style="width:40px;height:40px;">
+                                </div>
+                                <h3 class="skill-title">Data & Networking</h3>
+                                <p class="skill-description">Room Database, Retrofit, REST APIs, JSON, Local Storage</p>
+                                <div
+                                    style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                                    <img src="https://img.icons8.com/color/32/postgreesql.png" alt="PostgreSQL"
+                                        title="PostgreSQL">
+                                    <img src="https://img.icons8.com/color/32/microsoft-sql-server.png" alt="SQL Server"
+                                        title="SQL Server">
+                                    <img src="https://img.icons8.com/color/32/json.png" alt="JSON" title="JSON">
+                                </div>
+                            </div>
 
-                <div class="skill-card card">
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/color/48/git.png" alt="Git"
-                            style="width:40px;height:40px;">
-                    </div>
-                    <h3 class="skill-title">Development Tools</h3>
-                    <p class="skill-description">Android Studio, Git, GitHub, JUnit, Espresso Testing</p>
-                    <div
-                        style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
-                        <img src="https://img.icons8.com/fluency/32/github.png" alt="GitHub" title="GitHub">
-                        <img src="https://img.icons8.com/color/32/visual-studio-code-2019.png" alt="VS Code"
-                            title="VS Code">
-                        <img src="https://img.icons8.com/color/32/intellij-idea.png" alt="IntelliJ IDEA"
-                            title="IntelliJ IDEA">
-                    </div>
-                </div>
+                            <div class="skill-card card">
+                                <div class="skill-icon">
+                                    <img src="https://img.icons8.com/color/48/git.png" alt="Git"
+                                        style="width:40px;height:40px;">
+                                </div>
+                                <h3 class="skill-title">Development Tools</h3>
+                                <p class="skill-description">Android Studio, Git, GitHub, JUnit, Espresso Testing</p>
+                                <div
+                                    style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                                    <img src="https://img.icons8.com/fluency/32/github.png" alt="GitHub" title="GitHub">
+                                    <img src="https://img.icons8.com/color/32/visual-studio-code-2019.png" alt="VS Code"
+                                        title="VS Code">
+                                    <img src="https://img.icons8.com/color/32/intellij-idea.png" alt="IntelliJ IDEA"
+                                        title="IntelliJ IDEA">
+                                </div>
+                            </div>
 
-                <div class="skill-card card">
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/fluency/48/security-shield-green.png"
-                            alt="Security" style="width:40px;height:40px;">
-                    </div>
-                    <h3 class="skill-title">Performance & Security</h3>
-                    <p class="skill-description">Code Optimization, API Security, Memory Management,
-                        Profiling</p>
-                    <div
-                        style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
-                        <img src="https://img.icons8.com/color/32/gradle.png" alt="Gradle" title="Gradle">
-                        <img src="https://img.icons8.com/color/32/docker.png" alt="Docker" title="Docker">
-                    </div>
-                </div>
+                            <div class="skill-card card">
+                                <div class="skill-icon">
+                                    <img src="https://img.icons8.com/fluency/48/security-shield-green.png"
+                                        alt="Security" style="width:40px;height:40px;">
+                                </div>
+                                <h3 class="skill-title">Performance & Security</h3>
+                                <p class="skill-description">Code Optimization, API Security, Memory Management,
+                                    Profiling</p>
+                                <div
+                                    style="display:flex;gap:.5rem;justify-content:center;margin-top:1rem;flex-wrap:wrap;">
+                                    <img src="https://img.icons8.com/color/32/gradle.png" alt="Gradle" title="Gradle">
+                                    <img src="https://img.icons8.com/color/32/docker.png" alt="Docker" title="Docker">
+                                </div>
+                            </div>
             </div>
         </div>
     </section>
@@ -320,18 +364,18 @@
                 <div class="project-card-enhanced card" 
                      data-images='["assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo.png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (1).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (2).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (3).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (4).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (5).png", "assets/Day Pillers App photos/Gemini_Generated_Image_e6ge21e6ge21e6ge.png"]'>
                     <div class="project-image-enhanced" 
-                         style="background-image: url('assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo.png');">
+                         style="background-image: url('assets/Day Pillers App photos/Gemini_Generated_Image_e6ge21e6ge21e6ge.png');">
                         <div class="project-overlay">
                             <div class="project-badge">
                                 <i class="fas fa-mobile-alt"></i>
                                 <span>Android App</span>
-                            </div>
+                </div>
                             <div class="project-actions">
                                 <button class="gallery-trigger-btn">
                                     <i class="fas fa-images"></i>
                                     <span>View Gallery</span>
                                 </button>
-                            </div>
+            </div>
                         </div>
                     </div>
                     <div class="project-content">
@@ -365,7 +409,7 @@
                         </div>
                     </div>
                     <div class="project-gallery-preview">
-                        <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo.png" 
+                        <img src="assets/Day Pillers App photos/Gemini_Generated_Image_e6ge21e6ge21e6ge.png" 
                              alt="Screenshot 1" class="gallery-preview-thumb active">
                         <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (1).png" 
                              alt="Screenshot 2" class="gallery-preview-thumb">
@@ -430,6 +474,11 @@
         </div>
     </section>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <!-- Footer -->
     <footer class="footer">
         <p>© 2025 Mahmoud Mohsen. Design with passion for Android development.</p>
@@ -438,6 +487,22 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/gallery.js"></script>
+    
+    <!-- Performance and Analytics -->
+    <script>
+        // Simple performance tracking
+        window.addEventListener('load', function() {
+            const loadTime = performance.now();
+            console.log(`Portfolio loaded in ${Math.round(loadTime)}ms`);
+        });
+        
+        // Track gallery interactions
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.gallery-trigger-btn')) {
+                console.log('Gallery opened');
+            }
+        });
+    </script>
 </body>
 
 </html>
