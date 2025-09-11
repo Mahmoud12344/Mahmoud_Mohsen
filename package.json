@@ -1,0 +1,48 @@
+{
+  "name": "mahmoud-mohsen-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website for Android Developer Mahmoud Mohsen",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'No build process needed for static site'",
+    "preview": "npx serve . --listen 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "android-developer",
+    "web-development",
+    "responsive-design",
+    "vanilla-js",
+    "css3",
+    "html5"
+  ],
+  "author": {
+    "name": "Mahmoud Mohsen",
+    "email": "mahmoudmohsen12344@gmail.com",
+    "url": "https://github.com/Mahmoud12344"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mahmoud12344/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mahmoud12344/portfolio/issues"
+  },
+  "homepage": "https://mahmoud12344.github.io/portfolio",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+

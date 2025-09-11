@@ -1,0 +1,124 @@
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(37, 99, 235, .1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(6, 182, 212, .1) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    font-size: .875rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    animation: slideInLeft 1s ease-out;
+}
+
+.theme-light .hero-badge {
+    background: var(--bg-light-secondary);
+    border: 1px solid var(--border-light);
+}
+
+.theme-dark .hero-badge {
+    background: var(--surface-dark);
+    border: 1px solid var(--border-dark);
+}
+
+.hero-badge .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--success);
+    animation: pulse 2s infinite;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    animation: slideInLeft 1s ease-out .2s both;
+}
+
+.hero-title .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    animation: slideInLeft 1s ease-out .4s both;
+    color: var(--text-light-muted);
+}
+
+.theme-dark .hero-subtitle {
+    color: var(--text-dark-muted);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: slideInLeft 1s ease-out .6s both;
+}
+
+/* AVATAR */
+.hero-avatar {
+    position: relative;
+    animation: slideInRight 1s ease-out .8s both;
+}
+
+.avatar-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+}
+
+.avatar-glow {
+    position: absolute;
+    inset: -20px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    animation: rotate 8s linear infinite;
+    filter: blur(20px);
+    opacity: .7;
+}
+
+.avatar-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}

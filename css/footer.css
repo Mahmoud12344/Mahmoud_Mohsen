@@ -1,0 +1,15 @@
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid;
+    background: var(--bg-light-secondary);
+    border-color: var(--border-light);
+    color: var(--text-light-muted);
+}
+
+.theme-dark .footer {
+    background: var(--surface-dark);
+    border-color: var(--border-dark);
+    color: var(--text-dark-muted);
+}

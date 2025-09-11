@@ -1,0 +1,79 @@
+/* COMPONENTS */
+.card {
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: all .3s ease;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.theme-light .card {
+    background: var(--surface-light);
+    border-color: var(--border-light);
+    box-shadow: var(--shadow);
+}
+
+.theme-dark .card {
+    background: var(--surface-dark);
+    border-color: var(--border-dark);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .3);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .875rem 1.75rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-outline {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.theme-light .btn-outline {
+    background: var(--bg-light);
+}
+
+.theme-dark .btn-outline {
+    background: var(--surface-dark);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: var(--gradient-accent);
+    color: white;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}

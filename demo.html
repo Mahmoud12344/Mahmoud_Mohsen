@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Pillars Project Gallery Demo</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="theme-dark">
+    <div style="padding: 2rem; max-width: 800px; margin: 0 auto;">
+        <h1 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Day Pillars Project Gallery Demo</h1>
+        
+        <div class="project-card-enhanced card" 
+             data-images='["assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo.png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (1).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (2).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (3).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (4).png", "assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (5).png", "assets/Day Pillers App photos/Gemini_Generated_Image_e6ge21e6ge21e6ge.png"]'>
+            <div class="project-image-enhanced" 
+                 style="background-image: url('assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo.png');">
+                <div class="project-overlay">
+                    <div class="project-badge">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Android App</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="gallery-trigger-btn">
+                            <i class="fas fa-images"></i>
+                            <span>View Gallery</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="project-title">Day Pillars - A Simple To-Do App</h3>
+            <p class="project-description">A modern and minimalist to-do list app designed to help you organize your daily tasks with ease. Built with Jetpack Compose, the app focuses on a clean, intuitive user experience.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Jetpack Compose</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">MVVM</span>
+                <span class="tech-tag">Room Database</span>
+            </div>
+            <div class="project-features" style="margin-top: 1rem;">
+                <h4 style="font-size: 0.9rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 600;">Key Features:</h4>
+                <ul style="font-size: 0.85rem; color: var(--text-light-muted); margin: 0; padding-left: 1.2rem;">
+                    <li>Add, Edit, & Delete Tasks</li>
+                    <li>Real-time search functionality</li>
+                    <li>Filter & Sort options</li>
+                    <li>Priority System (High, Medium, Low)</li>
+                </ul>
+            </div>
+            <div class="project-links" style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://github.com/Mahmoud12344/Day-Pillars-app" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   style="font-size: 0.85rem; padding: 0.5rem 1rem;">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+            <div class="project-gallery-preview">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo.png" 
+                     alt="Screenshot 1" class="gallery-preview-thumb active">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (1).png" 
+                     alt="Screenshot 2" class="gallery-preview-thumb">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (2).png" 
+                     alt="Screenshot 3" class="gallery-preview-thumb">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (3).png" 
+                     alt="Screenshot 4" class="gallery-preview-thumb">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (4).png" 
+                     alt="Screenshot 5" class="gallery-preview-thumb">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_d1uowkd1uowkd1uo (5).png" 
+                     alt="Screenshot 6" class="gallery-preview-thumb">
+                <img src="assets/Day Pillers App photos/Gemini_Generated_Image_e6ge21e6ge21e6ge.png" 
+                     alt="Screenshot 7" class="gallery-preview-thumb">
+            </div>
+        </div>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background: var(--surface-dark); border-radius: var(--radius); border-left: 4px solid var(--primary);">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">How to Use the Gallery:</h3>
+            <ul style="color: var(--text-dark-muted); margin: 0; padding-left: 1.2rem;">
+                <li><strong>Click anywhere on the project card</strong> to open the full gallery</li>
+                <li><strong>Use arrow keys</strong> (← →) to navigate between images</li>
+                <li><strong>Swipe left/right</strong> on mobile devices</li>
+                <li><strong>Click the indicators</strong> at the bottom to jump to specific images</li>
+                <li><strong>Press Escape</strong> or click outside the modal to close</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/gallery.js"></script>
+</body>
+</html>
