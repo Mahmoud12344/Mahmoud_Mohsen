@@ -57,8 +57,10 @@
 
 .contact-details p {
     margin: 0;
-    font-size: .95rem;
+    font-size: 1.05rem;
     color: var(--text-light-muted);
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .theme-dark .contact-details p {
@@ -111,12 +113,14 @@
 }
 
 .contact-cta p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 2rem;
-    max-width: 400px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
     color: var(--text-light-muted);
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .theme-dark .contact-cta p {

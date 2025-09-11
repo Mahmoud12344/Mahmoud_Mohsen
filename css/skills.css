@@ -42,8 +42,10 @@
 }
 
 .skill-description {
-    font-size: .95rem;
+    font-size: 1.05rem;
     color: var(--text-light-muted);
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .theme-dark .skill-description {

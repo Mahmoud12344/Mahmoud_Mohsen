@@ -40,6 +40,14 @@
 
 .project-description {
     margin-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-light-muted);
+    font-weight: 400;
+}
+
+.theme-dark .project-description {
+    color: var(--text-dark-muted);
 }
 
 .project-tech {

@@ -75,10 +75,12 @@
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     margin-bottom: 2rem;
     animation: slideInLeft 1s ease-out .4s both;
     color: var(--text-light-muted);
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .theme-dark .hero-subtitle {

@@ -1,0 +1,139 @@
+/* SERVICES */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    text-align: center;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid var(--border-light);
+    background: var(--surface-light);
+}
+
+.theme-dark .service-card {
+    border-color: var(--border-dark);
+    background: var(--surface-dark);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.theme-dark .service-card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .service-title {
+    color: var(--secondary);
+}
+
+.service-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    color: var(--text-light-muted);
+    font-weight: 400;
+}
+
+.theme-dark .service-description {
+    color: var(--text-dark-muted);
+}
+
+.service-cta {
+    padding: 1rem;
+    background: var(--bg-light-secondary);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.theme-dark .service-cta {
+    background: var(--bg-dark-secondary);
+}
+
+.service-card:hover .service-cta {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+.service-cta-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: color 0.3s ease;
+    line-height: 1.5;
+}
+
+.service-card:hover .service-cta-text {
+    color: white;
+}
+
+/* RESPONSIVE SERVICES */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-description {
+        font-size: 0.95rem;
+    }
+}

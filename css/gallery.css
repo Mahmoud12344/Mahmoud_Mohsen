@@ -354,9 +354,11 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--text-light-muted);
     padding: 0.25rem 0;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .theme-dark .features-list li {

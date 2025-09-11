@@ -6,6 +6,9 @@
     background: var(--bg-light-secondary);
     border-color: var(--border-light);
     color: var(--text-light-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
 .theme-dark .footer {
