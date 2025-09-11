@@ -1,5 +1,4 @@
-// Main JavaScript file - imports all other scripts
-// This file will be loaded in the HTML and will handle the main functionality
+// Main JavaScript file - handles theme toggle and navigation functionality
 
 // Initialize theme on page load
 document.addEventListener('DOMContentLoaded', function() {
@@ -24,5 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
             themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
             localStorage.setItem('theme', 'dark');
         }
+    });
+
+    // Smooth scroll functionality
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            document.querySelector(a.getAttribute('href')).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    });
+
+    // Nav active on scroll
+    window.addEventListener('scroll', () => {
+        let current = '';
+        document.querySelectorAll('.section[id]').forEach(sec => {
+            if (scrollY >= sec.offsetTop - 100) current = sec.id;
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+        });
     });
 });
